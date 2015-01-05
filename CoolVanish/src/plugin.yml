@@ -1,0 +1,9 @@
+name: CoolVanish
+version: 1.0
+description: Vanish *woosh*
+author: cooltimmetje
+main: me.cooltimmetje.CoolVanish.Main
+commands:
+    v:
+        description: Vanishes player
+        permission: coolvanish.use
