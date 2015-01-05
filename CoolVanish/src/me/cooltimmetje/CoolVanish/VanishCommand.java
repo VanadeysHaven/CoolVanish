@@ -26,6 +26,7 @@ public class VanishCommand implements CommandExecutor {
                         }
                     }
                     p.sendMessage(Main.PluginTag + "You have been vanished.");
+                    Main.vansihedPlayers.add(p.getName());
                     return true;
                 } else {
                    for(Player pl : Bukkit.getServer().getOnlinePlayers()){
@@ -35,7 +36,8 @@ public class VanishCommand implements CommandExecutor {
                            }
                        }
                    }
-                    p.sendMessage("You have been unvanished.");
+                    p.sendMessage(Main.PluginTag + "You have been unvanished.");
+                    Main.vansihedPlayers.remove(p.getName());
                     return true;
                 }
             }
